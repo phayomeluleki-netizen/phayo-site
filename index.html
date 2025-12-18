@@ -1,298 +1,357 @@
-
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Phayo Studio — Web Design & Social Media</title>
-  <meta name="description" content="Phayo Studio — Modern websites & social media management for small businesses" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="style>
-    :root{
-      --bg:#f7f9fb; --card:#ffffff; --accent:#58a7e6; --text:#0f1720; --muted:#6b7280;
-      --maxw:1100px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:'Rubik',system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--text);background:var(--bg);}
-    a{color:var(--accent);text-decoration:none}
-    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-    .logo{display:flex;align-items:center;gap:14px}
-    .logo img{width:72px;height:72px;object-fit:contain;border-radius:10px;background:#fff;padding:6px}
-    nav a{margin-left:18px;color:var(--text);font-weight:500}
-    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:36px 0}
-    .hero-inner{background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));padding:28px;border-radius:14px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
-    h1{font-size:34px;margin:0 0 12px}
-    p.lead{margin:0;color:var(--muted);font-size:16px}
-    .cta{margin-top:18px;display:flex;gap:12px}
-    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
-    .btn-outline{background:transparent;border:2px solid rgba(15,23,32,0.06);padding:10px 16px;border-radius:10px}
-
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
-    .muted{color:var(--muted)}
-
-    section{padding:48px 0}
-    .section-title{display:flex;align-items:center;justify-content:space-between}
-    .services-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-
-    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .portfolio-item{height:160px;border-radius:10px;background:linear-gradient(180deg,#eef6fc,#fff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
-
-    footer{padding:28px 0;color:var(--muted);font-size:14px}
-
-    /* Responsive */
-    @media (max-width:900px){
-      .grid,.services-list,.portfolio-grid{grid-template-columns:repeat(2,1fr)}
-      nav{display:none}
-      .logo img{width:56px;height:56px}
-    }
-    @media (max-width:600px){
-      .container{padding:18px}
-      h1{font-size:28px}
-      .hero{grid-template-columns:1fr}
-      .grid,.services-list,.portfolio-grid{grid-template-columns:1fr}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phayo Meluleki | Web Design & Social Media Management</title>
+  <meta name="description" content="Professional web design and social media management to help businesses grow from 5 to 7 figures with powerful online systems." />  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <!-- Icons -->  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />  <style>
+    :root {
+      --blue: #0a4cff;
+      --dark-blue: #0a2a66;
+      --grey: #6b7280;
+      --light-grey: #f5f7fb;
+      --black: #0f172a;
+      --white: #ffffff;
     }
 
-    /* Contact form */
-    form .row{display:flex;gap:12px}
-    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:#fff}
-    form textarea{min-height:120px;resize:vertical}
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class=logo.png
-        png" alt="Phayo Web Studio Logo">
-        <img src="./assets/logo.png" alt="Phayo Studio logo" />
-        <div>
-          <div style="font-weight:700">PHAYO STUDIO</div>
-          <div class="muted" style="font-size:13px">Web Design · Social Media</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-    <main id="home">
-      <section class="hero">
-        <div class="hero-inner">
-          <h1>Creating Modern Websites & Smart Social Media That Grow Your Business</h1>
-          <p class="lead">Professional web design and strategic social media management for small and growing brands. Let us help you look professional, attract customers, and build trust online.</p>
-          <div class="cta">
-            <a class="btn" href="#contact">Get Started</a>
-            <a class="btn-outline" href="#portfolio">View Portfolio</a>
-          </div>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-grey);
+      color: var(--black);
+    }
 
-          <div class="grid">
-            <div class="card">
-              <h3 style="margin:0 0 8px">Modern & Clean Websites</h3>
-              <p class="muted">Responsive, fast and designed to convert visitors into customers.</p>
-            </div>
-            <div class="card">
-              <h3 style="margin:0 0 8px">Smart Social Media Strategy</h3>
-              <p class="muted">Content, posting plans and growth tactics that fit your budget.</p>
-            </div>
-            <div class="card">
-              <h3 style="margin:0 0 8px">Reliable Support</h3>
-              <p class="muted">Maintenance, updates and friendly support after launch.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    /* ================= TOP NAV ================= */
+    header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
 
-      <section id="services">
-        <div class="section-title">
-          <h2>Services</h2>
-          <div class="muted">Choose a package that fits your needs</div>
-        </div>
+    .top-nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+    }
 
-        <div class="services-list">
-          <div class="card">
-            <h3>Web Design</h3>
-            <p class="muted">Clean, mobile-first websites with SEO-friendly structure, contact forms and portfolio sections.</p>
-            <ul class="muted">
-              <li>Responsive layout</li>
-              <li>Fast loading pages</li>
-              <li>Basic SEO setup</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Social Media Management</h3>
-            <p class="muted">Consistent posting, content creation and engagement to grow your audience.</p>
-            <ul class="muted">
-              <li>Content calendar</li>
-              <li>Platform management</li>
-              <li>Performance reporting</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Brand Identity</h3>
-            <p class="muted">Logo, color palette and simple brand guide to keep your visuals consistent.</p>
-            <ul class="muted">
-              <li>Logo design</li>
-              <li>Colors & typography</li>
-              <li>Brand assets</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--blue);
+    }
 
-      <section id="portfolio">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <div class="muted">Selected projects & case studies</div>
-        </div>
+    .top-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
 
-        <div class="portfolio-grid" style="margin-top:18px">
-          <div class="portfolio-item">Project 1 — (coming soon)</div>
-          <div class="portfolio-item">Project 2 — (coming soon)</div>
-          <div class="portfolio-item">Project 3 — (coming soon)</div>
-          <div class="portfolio-item">Project 4 — (coming soon)</div>
-          <div class="portfolio-item">Project 5 — (coming soon)</div>
-          <div class="portfolio-item">Project 6 — (coming soon)</div>
-        <section>
-  <h2>What We Do</h2>
+    .top-nav ul li a {
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
 
-  <div class="services">
-    <div class="card">
-      <h3>Website Design</h3>
-      <p>
-        Modern, mobile-friendly websites that help businesses look professional
-        and attract customers online.
-      </p>
-    </div>
+    .top-nav ul li a:hover {
+      color: var(--blue);
+    }
 
-    <div class="card">
-      <h3>Social Media Management</h3>
-      <p>
-        We help brands grow on social media with consistent content,
-        engagement, and strategy.
-      </p>
-    </div>
+    /* ================= LEFT SERVICE NAV ================= */
+    .side-nav {
+      position: fixed;
+      top: 120px;
+      left: 20px;
+      background: var(--white);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      z-index: 900;
+    }
 
-    <div class="card">
-      <h3>Brand Support</h3>
-      <p>
-        From design updates to online presence support, we help your business
-        stay visible and trusted.
-      </p>
-    </div>
+    .side-nav h4 {
+      margin-bottom: 12px;
+      color: var(--dark-blue);
+      font-size: 16px;
+    }
+
+    .side-nav a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: var(--grey);
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+
+    .side-nav a:hover {
+      color: var(--blue);
+      transform: translateX(4px);
+    }
+
+    /* ================= SECTIONS ================= */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 120px 24px 80px;
+    }
+
+    /* ================= HERO / ABOUT ================= */
+    #about {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      color: var(--grey);
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(10,76,255,0.35);
+    }
+
+    /* ================= SERVICES ================= */
+    #services h2,
+    #portfolio h2,
+    #contact h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .service-card i {
+      font-size: 30px;
+      color: var(--blue);
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--grey);
+    }
+
+    /* ================= PORTFOLIO ================= */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .portfolio-item {
+      background: linear-gradient(135deg, var(--blue), var(--dark-blue));
+      height: 180px;
+      border-radius: 18px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+    }
+
+    /* ================= CONTACT ================= */
+    #contact {
+      background: linear-gradient(135deg, #0a4cff, #0a2a66);
+      color: white;
+      border-radius: 30px;
+      padding: 80px 40px;
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.3); }
+      70% { box-shadow: 0 0 0 20px rgba(255,255,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .socials a {
+      margin-right: 15px;
+      font-size: 22px;
+      color: white;
+    }
+
+    /* ================= FAQ ================= */
+    .faq {
+      margin-top: 60px;
+    }
+
+    .faq h3 {
+      margin-bottom: 10px;
+    }
+
+    .faq p {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 900px) {
+      #about {
+        grid-template-columns: 1fr;
+      }
+      .side-nav {
+        display: none;
+      }
+    }
+  </style></head>
+<body><header>
+  <nav class="top-nav">
+    <div class="logo">Phayo Meluleki</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header><div class="side-nav">
+  <h4>Services</h4>
+  <a href="#services">Web Design</a>
+  <a href="#services">Social Media Management</a>
+</div><section id="about">
+  <div class="hero">
+    <h1>I Build <span>Professional Digital Systems</span><br>That Turn Visitors Into Clients</h1>
+    <p>
+      I am Phayo Meluleki, a website designer and social media manager on a mission to help businesses
+      show up online with confidence. My goal is to transform brands from 5 figures to 6 and 7 figures
+      by building powerful digital tools that work 24/7 and attract customers worldwide.
+    </p>
+    <a href="#contact" class="cta">Work With Me</a>
   </div>
-</section>
+</section><section id="services">
+  <h2>Services That Modern Businesses Demand</h2>
+  <p style="color:var(--grey); max-width:700px;">
+    We live in a technology-driven world. Businesses that adopt digital tools grow faster, build trust,
+    and remain competitive. My services are designed to position your brand professionally online.
+  </p>  <div class="services-grid">
+    <div class="service-card">
+      <i class="fa-solid fa-laptop-code"></i>
+      <h3>Web Design</h3>
+      <p>
+        A professional website is your strongest online asset. It builds credibility, works 24/7,
+        and converts visitors into paying clients while expanding your business globally.
+      </p>
+    </div><div class="service-card">
+  <i class="fa-solid fa-chart-line"></i>
+  <h3>Social Media Management</h3>
+  <p>
+    Social media connects you directly with your audience. I help you grow visibility,
+    engagement, and trust while turning attention into real business results.
+  </p>
+</div>
 
-            <h4>Our Mission</h4>
-            <p class="muted">To empower small and medium businesses with professional online tools that help them grow, compete, and succeed.</p>
-
-            <h4>Our Values</h4>
-            <ul class="muted">
-              <li>Creativity</li>
-              <li>Professionalism</li>
-              <li>Integrity</li>
-              <li>Growth</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Quick Contact</h3>
-            <p class="muted">Phone: +268 7626 2057<br/>Email: phayomeluleki@gmail.com<br/>Location: Eswatini</p>
-            <a href="#contact" class="btn" style="display:inline-block;margin-top:10px">Contact Us</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <div class="muted">Let's talk about your project</div>
-        </div>
-
-        <div style.services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  max-width: 280px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}.services {
-          <div class="card">
-            <form action="mailto:phayomeluleki@gmail.com" method="post" enctype="text/plain">
-              <div style=
-}margin-bottom:12px"><label class="muted">Full Name</label><input type="text" name="name" required></div>
-              <div style="margin-bottom:12px"><label class="muted">Email</label><input type="email" name="email" 
-}="margin-bottom:12px"><label class="muted">Phone</label><input type="text" name="phone"></div>
-              <div style="margin-bottom.services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  max-width: 280px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}:12px"><label class="muted">Service</label>
-                <select name="service" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:#fff;width:100%">
-                  <option>Web Design</option>
-                  <option>Social Media Management</option>
-                  <option>Brand Identity</option>
-                </select>
-              </div>
-              <div style="margin-bottom:12px"><label class="muted">Message</label><textarea name="message"></textarea></div>
-              <button class="btn" type="submit">Send Message</button>
-            </form>
-          </div>
-
-          <div>
-            <div class="card">
-              <h3>Office</h3>
-              <p class="muted">Eswatini — Available for remote projects worldwide.</p>
-            </div>
-
-            <div style="height:18px"></div>
-
-            <div class="card">
-              <h3>Follow Us</h3>
-              <p class="muted">Facebook · Instagram · TikTok</p>
-              <div style="height:8px"></div>
-              <a href="#">facebook.com/yourpage</a><br/>
-              <a href="#">instagram.com/yourpage</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div>&copy; {new Date().getFullYear()} Phayo Studio</div>
-        <div class="muted">Built with care • phayomeluleki@gmail.com • +268 7626 2057</div>
-      </div>
-    </footer>
   </div>
+</section><section id="portfolio">
+  <h2>Portfolio</h2>
+  <p style="color:var(--grey);">Selected projects and brand concepts (more coming soon).</p>  <div class="portfolio-grid">
+    <div class="portfolio-item">Business Website</div>
+    <div class="portfolio-item">Brand Landing Page</div>
+    <div class="portfolio-item">Social Media Campaign</div>
+  </div>
+</section><section id="contact">
+  <h2>Let’s Build Your Online Growth System</h2>
+  <p>
+    Ready to position your business professionally and grow sustainably?
+    Get in touch today and let’s create a digital presence that works for you.
+  </p>  <form class="contact-form" action=https://formspree.io/f/xpwvvvdv method="POST">
+    <div style="display:grid; gap:15px; max-width:500px; margin-top:30px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding:14px; border-radius:10px; border:none;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding:14px; border-radius:10px; border:none;">
+      <textarea name="message" rows="5" placeholder="Tell me about your project" required style="padding:14px; border-radius:10px; border:none;"></textarea>
+      <button type="submit" style="padding:14px; border-radius:50px; border:none; background:white; color:#0a4cff; font-weight:600; cursor:pointer;">Send Message</button>
+    </div>
+  </form>  <div class="contact-info">
+    <a href="https://wa.me/26876262057" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 7626 2057</a>
+    <a href="https://www.facebook.com/share/17sxHinGV5/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook: Phayo Meluleki</a><div class="socials">
+  <a href="https://wa.me/26876262057" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/share/17sxHinGV5/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+</div>
 
-  <script>
-    // Simple script to replace footer year in older browsers
-    (function(){
-      try{document.querySelector('footer div').firstChild.textContent = '© ' + new Date().getFullYear() + ' Phayo Studio';}catch(e){}
-    })();
-  </script>
-</body>
+  </div>  <div class="faq">
+    <h3>Frequently Asked Questions</h3>
+    <p><strong>Do I really need a website?</strong><br>
+      Yes. A website builds trust, credibility, and allows customers to find you anytime, anywhere.
+    </p><br>
+    <p><strong>Can social media alone grow my business?</strong><br>
+      Social media works best when combined with a professional website that converts attention into sales.
+    </p><br>
+    <p><strong>How soon can I see results?</strong><br>
+      With the right strategy, many businesses see improved visibility and leads within weeks.
+    </p>
+  </div>
+</section></body>
 </html>
-<style>
-.whatsapp-btn { color: green; }
-</style>
