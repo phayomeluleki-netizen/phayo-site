@@ -32,7 +32,20 @@
       scroll-behavior: smooth;
     }
 
-    body {
+    body {<header class="top-header">
+  <div class="logo">Phayo Meluleki</div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="main-menu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
       font-family: 'Poppins', sans-serif;
       background: var(--light-grey);
       color: var(--black);
