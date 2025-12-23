@@ -205,6 +205,22 @@
       cursor: pointer;
     }
 
+    .contact-profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-profile img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+    }
+
     /* Footer */
     footer {
       background: #020617;
@@ -276,7 +292,15 @@
 </section><section class="contact reveal" id="contact">
   <div class="contact-inner">
     <h2>Let’s Work Together</h2>
-    <p>Tell me about your business and let’s build a strong online presence.</p><form action="https://formspree.io/f/xwvebgnr"  method="POST">
+    <p>Tell me about your business and let’s build a strong online presence.</p><div class="contact-profile">
+  <img src="profile.jpg" alt="Phayo Meluleki" />
+  <div>
+    <p><strong>Phayo Meluleki</strong></p>
+    <p>Web Design & Social Media Management</p>
+  </div>
+</div>
+
+<form action="https://formspree.io/f/xwvebgnr"  method="POST">
   <input type="text" name="name" placeholder="Your Name" required>
   <input type="email" name="email" placeholder="Your Email" required>
   <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -303,4 +327,4 @@
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll();
 </script></body>
-    </html>
+</html>
