@@ -1,4 +1,47 @@
-body {
+body {.top-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #0a3d62;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#main-menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #ffffff;
+  display: none;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#main-menu a {
+  padding: 12px 20px;
+  color: #0a3d62;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+#main-menu a:hover {
+  background: #f1f1f1;
+}
   font-family: Arial, sans-serif;
   background: #f4f6f8;
   margin: 0;
