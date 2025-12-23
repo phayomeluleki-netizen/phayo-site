@@ -216,6 +216,26 @@
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
     }
+  
+    /* Animations */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+
+    .cta {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .service, .trust-box {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service:hover, .trust-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
   </style></head><body><header>
   <div class="nav">
     <div class="logo">Phayo Meluleki</div>
@@ -224,7 +244,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-</header><section class="hero">
+</header><section class="hero reveal">
   <div class="hero-inner">
     <div>
       <h1>Build Trust. Grow Online. Convert Visitors into Clients.</h1>
@@ -232,14 +252,14 @@
       <a href="#contact" class="cta">Start Your Project</a>
     </div>
   </div>
-</section><section class="trust">
+</section><section class="trust reveal">
   <div class="trust-grid">
     <div class="trust-box"><i class="fa-solid fa-globe"></i><p>24/7 Online Presence</p></div>
     <div class="trust-box"><i class="fa-solid fa-shield"></i><p>Professional & Secure</p></div>
     <div class="trust-box"><i class="fa-solid fa-chart-line"></i><p>Growth Focused</p></div>
     <div class="trust-box"><i class="fa-solid fa-users"></i><p>Client-Centered Approach</p></div>
   </div>
-</section><section class="services" id="services">
+</section><section class="services reveal" id="services">
   <div class="section-title">
     <h2>Premium Digital Services</h2>
     <p>Modern businesses need strong digital tools to stay competitive in today’s technology-driven world.</p>
@@ -253,7 +273,7 @@
       <p>Strategic content and brand positioning that increases visibility, engagement, and customer trust.</p>
     </div>
   </div>
-</section><section class="contact" id="contact">
+</section><section class="contact reveal" id="contact">
   <div class="contact-inner">
     <h2>Let’s Work Together</h2>
     <p>Tell me about your business and let’s build a strong online presence.</p><form action="https://formspree.io/f/xwvebgnr"  method="POST">
@@ -266,5 +286,21 @@
   </div>
 </section><footer>
   <p>© 2025 Phayo Meluleki · Web Design & Social Media Management</p>
-</footer></body>
-</html>
+</footer><script>
+  // Scroll reveal animation
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    reveals.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      if (elementTop < windowHeight - 100) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+</script></body>
+    </html>
