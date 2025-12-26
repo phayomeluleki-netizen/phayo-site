@@ -329,6 +329,36 @@
   border-width: 6px;
   border-style: solid;
   border-color: transparent transparent transparent #0f172a;
+  /* Contact Facebook Button */
+.contact-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.facebook-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.facebook-contact i {
+  font-size: 18px;
+}
+
+.facebook-contact:hover {
+  background: #ffffff;
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
 }
     }</style></head><body><header>
   <div class="nav">
@@ -389,7 +419,15 @@
     <h2>Let’s Work Together</h2>
     <p>Tell me about your business and let’s build a strong online presence.</p><div class="contact-profile">
   <img src="profile.jpg" alt="Phayo Meluleki" />
-  <div>
+  <div><div class="contact-social">
+  <a href="https://www.facebook.com/share/1GCAgdhKXK/"
+     target="_blank"
+     class="facebook-contact"
+     aria-label="Visit my Facebook profile">
+    <i class="fa-brands fa-facebook-f"></i>
+    <span>Connect on Facebook</span>
+  </a>
+  </div>
     <p><strong>Phayo Meluleki</strong></p>
     <p>Web Design & Social Media Management</p>
   </div>
