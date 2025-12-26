@@ -329,7 +329,7 @@
   border-width: 6px;
   border-style: solid;
   border-color: transparent transparent transparent #0f172a;
-  /* Contact Facebook Button – Fixed Contrast */
+  /* Contact Facebook Button – Visible Circle Fix */
 .contact-social {
   display: flex;
   justify-content: center;
@@ -339,32 +339,37 @@
 .facebook-contact {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 22px;
-  background: #ffffff;              /* solid contrast */
-  color: #0b3c5d;                   /* your primary brand blue */
+  gap: 12px;
+  padding: 12px 20px;
+  background: #ffffff;
   border-radius: 50px;
   font-weight: 600;
-  border: none;
+  color: #0b3c5d;
   transition: all 0.3s ease;
 }
 
-.facebook-contact i {
-  font-size: 18px;
-  color: #1877f2;                   /* Facebook brand blue */
+.facebook-icon {
+  width: 36px;
+  height: 36px;
+  background: #1877f2; /* Facebook blue */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook-icon i {
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .facebook-contact:hover {
-  background: #e5e7eb;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-.facebook-contact:hover {
-  background: #ffffff;
-  color: var(--primary);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.facebook-contact:hover .facebook-icon {
+  background: #0b3c5d; /* your brand blue */
 }
 }
     }</style></head><body><header>
@@ -431,8 +436,10 @@
      target="_blank"
      class="facebook-contact"
      aria-label="Visit my Facebook profile">
-    <i class="fa-brands fa-facebook-f"></i>
-    <span>Connect on Facebook</span>
+    <span class="facebook-icon">
+      <i class="fa-brands fa-facebook-f"></i>
+    </span>
+    <span class="facebook-text">Connect on Facebook</span>
   </a>
   </div>
     <p><strong>Phayo Meluleki</strong></p>
