@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Professional Web Design for Businesses | Phayo Meluleki</title>
+
+<meta name="description" content="Professional websites that help businesses appear trustworthy, rank on Google, and attract more customers.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTT8S2MMCD"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ZTT8S2MMCD');
+</script>
+
+<style>
+
+:root{
+--white:#FFFFFF;
+--gold:#F9CE20;
+--dark:#1F1F1F;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:var(--white);
+color:var(--dark);
+line-height:1.6;
+}
+
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#fff;
+border-bottom:1px solid #eee;
+z-index:1000;
+}
+
+.nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+font-weight:700;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-links a{
+font-weight:500;
+}
+
+.menu-toggle{
+display:none;
+font-size:22px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:left;
+padding:80px 8%;
+color:#fff;
+overflow:hidden;
+}
+
+/* Background Image */
+.hero-bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("april-package-flyer.jpg");
+background-size:cover;
+background-position:center;
+z-index:0;
+}
+
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+z-index:1;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero-photo{
+position:absolute;
+bottom:0;
+right:6%;
+height:380px;
+z-index:3;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}@media (max-width:768px){
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero-content{
+max-width:100%;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero-photo-wrapper{
+justify-content:center;
+}
+
+.hero-photo{
+width:220px;
+}
+
+}
+
+/* SECTIONS */
+
+section{
+padding:90px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:2rem;
+margin-bottom:10px;
+}
+
+/* SERVICES */
+
+.services-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.service{
+border:1px solid #eee;
+padding:35px;
+border-radius:12px;
+transition:.3s;
+}
+
+.service:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* APRIL */
+
+.april{
+background:var(--gold);
+text-align:center;
+}
+
+.april ul{
+margin-top:20px;
+list-style:none;
+}
+
+/* PRICING */
+
+.pricing-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.price-card{
+border:1px solid #eee;
+padding:35px;
+border-radius:14px;
+transition:.4s;
+position:relative;
+background:white;
+}
+
+.price-card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 45px rgba(0,0,0,0.1);
+}
+
+.price-card h2{
+margin:15px 0;
+}
+
+.price-card ul{
+list-style:none;
+margin:20px 0;
+}
+
+.price-btn{
+display:inline-block;
+background:var(--gold);
+padding:12px 25px;
+border-radius:30px;
+font-weight:600;
+}
+
+.popular{
+border:2px solid var(--gold);
+transform:scale(1.05);
+}
+
+.badge{
+position:absolute;
+top:-12px;
+right:20px;
+background:var(--gold);
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+}
+
+/* PROCESS */
+
+.process-grid{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-grid{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.testimonial img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact{
+background:var(--dark);
+color:white;
+text-align:center;
+}
+
+form{
+max-width:600px;
+margin:auto;
+margin-top:30px;
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+font-family:inherit;
+}
+
+button{
+background:var(--gold);
+border:none;
+padding:15px;
+border-radius:40px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:30px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+align-items:center;
+display:none;
+padding:20px;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+
+}/* WHY WEBSITE SECTION */
+
+.why-website{
+max-width:900px;
+margin:auto;
+padding:80px 20px;
+text-align:center;
+}
+
+.why-title{
+margin-bottom:40px;
+}
+
+/* Title styled like a professional button */
+
+.why-heading{
+background:#FFFFFF;
+border:2px solid #F9CE20;
+color:#1F1F1F;
+font-size:1.4rem;
+font-weight:600;
+padding:14px 30px;
+border-radius:40px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+cursor:default;
+}
+
+/* Paragraph text */
+
+.why-content p{
+margin-bottom:20px;
+font-size:1rem;
+line-height:1.7;
+color:#444;
+}
+
+/* Highlight sentence */
+
+.why-highlight{
+font-weight:600;
+color:#1F1F1F;
+margin-top:25px;
+}/* Invisible to Online Offer */
+
+.invisible-offer{
+padding:100px 20px;
+background:#ffffff;
+}
+
+.offer-intro{
+text-align:center;
+max-width:800px;
+margin:auto;
+margin-bottom:50px;
+}
+
+.offer-main-title{
+font-size:2.2rem;
+font-weight:700;
+color:#1F1F1F;
+margin-bottom:15px;
+}
+
+.offer-subtitle{
+color:#555;
+font-size:1.05rem;
+}
+
+.offer-card{
+max-width:900px;
+margin:auto;
+background:#ffffff;
+padding:45px;
+border-radius:18px;
+box-shadow:0 25px 60px rgba(0,0,0,0.08);
+border:1px solid #eee;
+}
+
+.offer-card-title{
+font-size:1.5rem;
+margin-bottom:20px;
+color:#1F1F1F;
+}
+
+.offer-problem{
+margin-bottom:30px;
+color:#444;
+line-height:1.7;
+}
+
+.offer-section{
+margin-bottom:25px;
+}
+
+.offer-section h4{
+color:#1F1F1F;
+margin-bottom:10px;
+}
+
+.offer-section ul{
+padding-left:20px;
+line-height:1.7;
+}
+
+.offer-bonus{
+background:#FFF9E0;
+padding:25px;
+border-radius:12px;
+margin-top:30px;
+}
+
+.offer-bonus h4{
+margin-bottom:10px;
+}
+
+.offer-bonus ul{
+padding-left:20px;
+}
+
+.offer-cta{
+text-align:center;
+margin-top:40px;
+}
+
+.offer-button{
+display:inline-block;
+background:#F9CE20;
+color:#1F1F1F;
+padding:15px 35px;
+border-radius:40px;
+font-weight:600;
+margin-top:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.offer-button:hover{
+transform:translateY(-3px);
+}
+
+.offer-note{
+margin-top:10px;
+font-size:0.9rem;
+color:#777;
+}/* Price Box */
+
+.offer-price-box{
+text-align:center;
+background:#FFF9E0;
+padding:25px;
+border-radius:12px;
+margin-bottom:30px;
+}
+
+.offer-price-label{
+font-size:0.9rem;
+color:#555;
+display:block;
+}
+
+.offer-price{
+font-size:2.4rem;
+color:#1F1F1F;
+margin:10px 0;
+font-weight:700;
+}
+
+.offer-price-note{
+font-size:0.9rem;
+color:#666;
+}/* Floating WhatsApp Button - Professional & Premium */
+
+.whatsapp-float{
+position:fixed;
+bottom:24px;
+right:24px;
+width:60px;
+height:60px;
+background:#F9CE20;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#1F1F1F;
+font-size:28px;
+box-shadow:0 12px 30px rgba(0,0,0,0.25);
+z-index:9999;
+cursor:pointer;
+animation:whatsappPulse 2.5s infinite;
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.08);
+box-shadow:0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* Tooltip */
+
+.whatsapp-tooltip{
+position:absolute;
+right:70px;
+background:#1F1F1F;
+color:#ffffff;
+padding:8px 14px;
+border-radius:8px;
+font-size:13px;
+font-weight:500;
+white-space:nowrap;
+opacity:0;
+pointer-events:none;
+transform:translateY(5px);
+transition:all 0.3s ease;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.whatsapp-float:hover .whatsapp-tooltip{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Tooltip arrow */
+.whatsapp-tooltip::after{
+content:"";
+position:absolute;
+top:50%;
+right:-6px;
+transform:translateY(-50%);
+border-width:6px;
+border-style:solid;
+border-color:transparent transparent transparent #1F1F1F;
+}
+
+/* Pulse animation */
+@keyframes whatsappPulse{
+0%{ box-shadow:0 0 0 0 rgba(249,206,32,0.7);}
+70%{ box-shadow:0 0 0 16px rgba(249,206,32,0);}
+100%{ box-shadow:0 0 0 0 rgba(249,206,32,0);}
+}/* Premium Service Headings */
+
+.service-heading{
+display:inline-block;
+background:#F9CE20;
+color:#1F1F1F;
+font-weight:700;
+font-size:1.1rem;
+padding:10px 28px;
+border-radius:40px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:all 0.3s ease;
+cursor:default;
+margin-bottom:15px;
+}
+
+.service-heading:hover{
+transform:translateY(-2px);
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}/* Payment Options Section */
+
+.payment-options{
+text-align:center;
+margin:25px 0 35px 0;
+}
+
+.payment-title{
+font-weight:600;
+margin-bottom:15px;
+color:#1F1F1F;
+}
+
+.payment-logos{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+flex-wrap:wrap;
+margin-bottom:10px;
+}
+
+.payment-logos img{
+height:40px;
+object-fit:contain;
+transition:transform 0.3s ease;
+}
+
+.payment-logos img:hover{
+transform:scale(1.1);
+}
+
+.payment-note{
+font-size:0.85rem;
+color:#666;
+}/* Secure Payment Section */
+
+.secure-payment{
+margin:30px 0;
+text-align:center;
+}
+
+.secure-title{
+font-weight:600;
+margin-bottom:15px;
+color:#1F1F1F;
+}
+
+.secure-box{
+background:#f8f8f8;
+padding:25px;
+border-radius:12px;
+border:1px solid #eee;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.secure-box p{
+margin-bottom:12px;
+color:#444;
+line-height:1.6;
+}
+
+.payment-number{
+font-size:1.1rem;
+color:#1F1F1F;
+}
+
+.secure-box strong{
+color:#F9CE20;
+}.secure-trust{
+margin-top:12px;
+font-size:0.85rem;
+color:#777;
+}/* Limited Slots Counter */
+
+.limited-slots{
+margin:25px 0;
+text-align:center;
+background:#FFF9E0;
+padding:18px;
+border-radius:12px;
+border:1px solid #F9CE20;
+}
+
+.slots-title{
+font-weight:600;
+margin-bottom:6px;
+color:#1F1F1F;
+}
+
+.slots-count{
+font-size:1.1rem;
+font-weight:700;
+color:#1F1F1F;
+}
+
+.slots-count span{
+color:#F9CE20;
+font-size:1.4rem;
+}.premium-section{
+margin:35px 0;
+padding:30px;
+background:#ffffff;
+border:1px solid #eee;
+border-radius:16px;
+box-shadow:0 15px 35px rgba(0,0,0,0.06);
+transition:transform 0.3s ease;
+}
+
+.premium-section:hover{
+transform:translateY(-5px);
+}
+
+.premium-heading{
+font-size:1.2rem;
+font-weight:700;
+color:#1F1F1F;
+margin-bottom:8px;
+position:relative;
+display:inline-block;
+}
+
+.premium-heading::after{
+content:"";
+display:block;
+width:40px;
+height:3px;
+background:#F9CE20;
+margin-top:6px;
+}
+
+.premium-subtext{
+font-size:0.95rem;
+color:#555;
+margin-bottom:18px;
+line-height:1.6;
+}
+
+.premium-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.premium-list li{
+position:relative;
+padding-left:22px;
+margin-bottom:10px;
+color:#444;
+}
+
+.premium-list li::before{
+content:"";
+position:absolute;
+left:0;
+top:8px;
+width:8px;
+height:8px;
+background:#F9CE20;
+border-radius:50%;
+}
+
+.confidence-line{
+font-size:0.85rem;
+color:#777;
+margin-top:12px;
+}/* Premium Scroll Reveal */
+
+.reveal-premium{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.9s cubic-bezier(0.22,1,0.36,1);
+}
+
+.reveal-premium.active{
+opacity:1;
+transform:translateY(0);
+}
+
+
+/* Heading underline animation */
+
+.premium-heading::after{
+content:"";
+display:block;
+width:0;
+height:3px;
+background:#F9CE20;
+margin-top:6px;
+transition:width 0.6s ease;
+}
+
+.premium-section.active .premium-heading::after{
+width:40px;
+}
+
+
+/* Bullet micro-animation */
+
+.premium-list li{
+opacity:0;
+transform:translateX(-10px);
+transition:all 0.4s ease;
+}
+
+.premium-section.active .premium-list li{
+opacity:1;
+transform:translateX(0);
+}
+
+/* Stagger bullet animation */
+.premium-section.active .premium-list li:nth-child(1){ transition-delay:0.2s; }
+.premium-section.active .premium-list li:nth-child(2){ transition-delay:0.3s; }
+.premium-section.active .premium-list li:nth-child(3){ transition-delay:0.4s; }
+.premium-section.active .premium-list li:nth-child(4){ transition-delay:0.5s; }
+.premium-section.active .premium-list li:nth-child(5){ transition-delay:0.6s; }
+
+
+/* Smooth hover refinement */
+.premium-section{
+transition:transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.premium-section:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 60px rgba(0,0,0,0.1);
+}/* Premium CTA Button */
+
+.offer-button{
+display:inline-block;
+margin-top:20px;
+padding:14px 32px;
+background:#F9CE20;
+color:#1F1F1F;
+font-weight:700;
+border-radius:50px;
+text-decoration:none;
+position:relative;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:all 0.3s ease;
+animation:ctaPulse 2.8s infinite;
+}
+
+/* Hover refinement */
+.offer-button:hover{
+transform:translateY(-3px);
+box-shadow:0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* Glow Pulse Animation */
+@keyframes ctaPulse{
+0%{
+box-shadow:0 0 0 0 rgba(249,206,32,0.7);
+}
+70%{
+box-shadow:0 0 0 18px rgba(249,206,32,0);
+}
+100%{
+box-shadow:0 0 0 0 rgba(249,206,32,0);
+}
+}/* Package Flyer */
+
+.offer-flyer{
+margin:40px auto;
+text-align:center;
+}
+
+.offer-flyer img{
+max-width:420px;
+width:100%;
+border-radius:18px;
+box-shadow:0 25px 60px rgba(0,0,0,0.18);
+transition:transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.offer-flyer img:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 35px 80px rgba(0,0,0,0.25);
+}/* Case Study Section */
+
+.case-study{
+padding:100px 20px;
+background:#ffffff;
+}
+
+.case-container{
+max-width:1100px;
+margin:auto;
+}
+
+.case-title{
+text-align:center;
+font-size:2rem;
+margin-bottom:15px;
+color:#1F1F1F;
+}
+
+.case-intro{
+text-align:center;
+max-width:700px;
+margin:0 auto 60px;
+color:#555;
+}
+
+.case-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.case-image img{
+width:100%;
+border-radius:20px;
+box-shadow:0 25px 60px rgba(0,0,0,0.15);
+}
+
+.case-details h3{
+margin-bottom:20px;
+color:#1F1F1F;
+}
+
+.case-list{
+list-style:none;
+padding:0;
+margin-bottom:25px;
+}
+
+.case-list li{
+margin-bottom:12px;
+position:relative;
+padding-left:22px;
+color:#444;
+}
+
+.case-list li::before{
+content:"";
+position:absolute;
+left:0;
+top:8px;
+width:8px;
+height:8px;
+background:#F9CE20;
+border-radius:50%;
+}
+
+.case-button{
+display:inline-block;
+padding:12px 28px;
+background:#F9CE20;
+color:#1F1F1F;
+font-weight:600;
+border-radius:50px;
+text-decoration:none;
+transition:all 0.3s ease;
+}
+
+.case-button:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.case-transformation{
+margin-top:70px;
+background:#FFF9E0;
+padding:40px;
+border-radius:20px;
+}
+
+.case-highlight{
+font-weight:600;
+margin-top:20px;
+color:#1F1F1F;
+}
+
+/* Mobile */
+@media(max-width:900px){
+.case-content{
+grid-template-columns:1fr;
+}
+}.case-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.case-list li{
+position:relative;
+padding-left:22px;
+margin-bottom:12px;
+color:#444;
+opacity:0;
+transform:translateX(-10px);
+transition:all 0.4s ease;
+}
+
+.case-details.active .case-list li{
+opacity:1;
+transform:translateX(0);
+}
+
+.case-details.active .case-list li:nth-child(1){transition-delay:0.2s;}
+.case-details.active .case-list li:nth-child(2){transition-delay:0.3s;}
+.case-details.active .case-list li:nth-child(3){transition-delay:0.4s;}
+.case-details.active .case-list li:nth-child(4){transition-delay:0.5s;}
+.case-details.active .case-list li:nth-child(5){transition-delay:0.6s;}
+
+.case-list li::before{
+content:"";
+position:absolute;
+left:0;
+top:8px;
+width:8px;
+height:8px;
+background:#F9CE20;
+border-radius:50%;
+}.case-details{
+background:#ffffff;
+padding:35px;
+border-radius:16px;
+border:1px solid #eee;
+box-shadow:0 15px 40px rgba(0,0,0,0.06);
+opacity:0;
+transform:translateY(30px);
+transition:all 0.7s ease;
+}
+
+.case-details.active{
+opacity:1;
+transform:translateY(0);
+}.case-details:hover{
+transform:translateY(-6px);
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
+}.case-image img{
+transition:transform 0.6s ease;
+}
+
+.case-image:hover img{
+transform:scale(1.03);
+}.hero h1{
+font-size:38px;
+line-height:1.2;
+}
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+}
+
+/* Background Image */
+.hero-bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:contain;
+background-color:#000;
+z-index:0;
+}
+
+/* Overlay */
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+z-index:1;
+}
+
+/* Content */
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:38px;
+line-height:1.3;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#F9CE20;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+color:#ddd;
+}
+
+/* Buttons */
+.hero-buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.hero-btn{
+padding:14px 28px;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.hero-btn.primary{
+background:#F9CE20;
+color:#1F1F1F;
+}
+
+.hero-btn.secondary{
+border:2px solid white;
+color:white;
+}
+
+.hero-btn.primary:hover{
+transform:translateY(-3px);
+}
+
+.hero-btn.secondary:hover{
+background:white;
+color:#1F1F1F;
+}
+
+/* Profile Photo */
+.hero-photo{
+width:220px;
+margin-top:20px;
+animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+@media (max-width:768px){
+
+.hero{
+height:auto;
+padding:120px 20px 60px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.hero-photo{
+width:180px;
+}
+
+.hero-bg{
+object-fit:contain;
+}
+
+}.hero-btn.primary{
+background:#F9CE20;
+color:#1F1F1F;
+padding:14px 28px;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 0 15px rgba(249,206,32,0.6);
+animation:pulseGlow 2.5s infinite;
+transition:0.3s;
+}
+
+@keyframes pulseGlow{
+0%{
+box-shadow:0 0 10px rgba(249,206,32,0.5);
+}
+
+50%{
+box-shadow:0 0 25px rgba(249,206,32,0.9);
+}
+
+100%{
+box-shadow:0 0 10px rgba(249,206,32,0.5);
+}
+}.hero-btn.primary:hover{
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}.offer-note{
+margin-top:10px;
+font-size:14px;
+color:#F9CE20;
+font-weight:500;
+}.scroll-down{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+font-size:28px;
+animation:scrollBounce 1.8s infinite;
+}
+
+.scroll-down a{
+color:#F9CE20;
+text-decoration:none;
+font-weight:bold;
+}
+
+@keyframes scrollBounce{
+0%{transform:translate(-50%,0);}
+50%{transform:translate(-50%,10px);}
+100%{transform:translate(-50%,0);}
+}.scroll-down span{
+display:block;
+width:25px;
+height:25px;
+border-bottom:3px solid #F9CE20;
+border-right:3px solid #F9CE20;
+transform:rotate(45deg);
+animation:scrollBounce 1.8s infinite;
+}.back-to-top{
+position:fixed;
+bottom:30px;
+right:30px;
+width:50px;
+height:50px;
+background:#F9CE20;
+color:#1F1F1F;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+opacity:0;
+visibility:hidden;
+transition:0.3s ease;
+z-index:999;
+}
+
+.back-to-top:hover{
+transform:translateY(-5px);
+}html{
+scroll-behavior:smooth;
+}</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+
+<div class="logo">Phayo Meluleki</div>
+
+<div class="menu-toggle">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#process">How We Work</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+</header>
+
+<section class="hero">
+
+<img src="phayo.png" class="hero-bg" alt="phayo.png">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+Helping Businesses Grow Online With
+<span>Professional Websites</span> & Social Media Strategy
+</h1>
+
+<p>
+Helping entrepreneurs build visibility online using structured websites
+and social media systems that attract real customers.
+</p>
+
+<div class="hero-buttons">
+<a href="#special-offer" class="hero-btn primary">
+🔥 View April Special Offer
+</a><p class="offer-note">
+⚡ Limited April slots available
+</p>
+<a href="https://wa.me/26876262057" class="hero-btn secondary">Get Started</a>
+</div>
+
+
+</div>
+
+<div class="scroll-down">
+  <a href="#special-offer">
+    <span></span>
+  </a>
+</div>
+</div></section>
+
+<section class="Contact" id="Contact">
+
+<div class="section-title">
+<h2>Digital Services for Modern Businesses</h2>
+</div>
+
+<div class="services-grid">
+
+<h3 class="service-heading">Professional Web Design</h3>
+<p>Many entrepreneurs work extremely hard offline, building their businesses through dedication and personal effort. However, in today’s digital world, a business that is not visible online often loses opportunities to competitors who have a strong online presence. My goal is to help hardworking business owners become visible, credible, and trusted online by creating professional websites that represent their brand and communicate their value clearly. A well-designed website works as your digital business location, allowing potential customers to find you on Google, learn about your services, and contact you easily. This helps transform your hard work into a stronger, more visible brand that attracts new customers.</p>
+</div>
+<div class="services-grid">
+
+<h3 class="service-heading">Social Media Management</h3>
+<p>Social media management helps businesses build a strong and consistent online presence where their customers spend time every day. I help businesses grow their visibility by creating strategic content that speaks directly to their potential customers and reflects their brand professionally. Through consistent posting, engaging visuals, and targeted messaging, social media becomes a tool that builds trust, increases awareness, and drives traffic to your website. Instead of simply posting randomly, the goal is to position your business as active, reliable, and relevant so that when people need your service, your business is the one they remember and contact.</p>
+
+<section class="why-website">
+
+<div class="why-title">
+<button class="why-heading">
+Why Your Business Needs a Website Today
+</button>
+</div>
+
+<div class="why-content">
+
+<p>
+Many entrepreneurs work extremely hard offline, building their businesses through dedication, skill, and personal relationships. However, in today’s digital world, businesses that are not visible online often lose opportunities to competitors who appear more professional and accessible on the internet. Most customers now search online before deciding which business to trust, and without a website, your business may be overlooked even if your service is excellent.
+</p>
+
+<p>
+A professional website helps transform your hard work into a visible and trusted brand. It acts as your digital business location that is open 24 hours a day, allowing potential customers to discover your services, understand what you offer, and contact you easily. Instead of relying only on word-of-mouth or physical visibility, your business becomes easier to find, more credible, and better positioned to attract new customers.
+</p>
+
+<p class="why-highlight">
+Your business already works hard offline. A professional website ensures that the same effort is visible online.
+</p>
+
+</div>
+<p>
+  
+</p>
+</p>
+</section>
+ 
+<section id="special-offer" class="offer-section">
+
+<div class="offer-intro">
+
+<h2 class="offer-main-title">
+From Invisible to Online in 30 Days
+</h2>
+<div class="offer-flyer reveal-fade">
+
+<img src="april-package-flyer.jpg" 
+     alt="From Invisible to Online in 30 Days Package Flyer">
+
+</div>
+
+<p class="offer-subtitle">
+A complete digital launch package designed to help hardworking entrepreneurs become visible, credible, and discoverable
+online.
+</p>
+
+</div>
+
+<div class="offer-card">
+  
+</div>
+
+<div class="offer-price-box">
+<span class="offer-price-label">Complete Package</span>
+<h3 class="offer-price">E3,900</h3>
+<p class="offer-price-note">One-time investment</p>
+</div>
+<div class="limited-slots">
+
+<p class="slots-title">
+Limited Client Slots Available This Month
+</p>
+
+<p class="slots-count">
+Only <span id="slotsNumber">3</span> Slots Remaining
+</p>
+
+</div>
+<div class="payment-options">
+
+<p class="payment-title">Secure & Flexible Payment Methods</p>
+
+<div class="payment-logos">
+
+<img src="mobile-money-logo.png" alt="Mobile Money">
+<img src="ewallet-logo.png" alt="eWallet Payment">
+<img src="unayo-logo.png" alt="Unayo Voucher Accepted">
+
+</div>
+
+<p class="payment-note">
+Secure payments accepted via Mobile Money, eWallet, and Unayo Vouchers.
+</p>
+<p class="payment-confidence">
+Start with a 50% deposit. Balance after completion.
+</p><div class="secure-payment">
+
+<h4 class="secure-title">
+🔒 Secure Payment Instructions
+</h4>
+
+<div class="secure-box">
+
+<p>
+Payments can be made securely via Mobile Money, eWallet, or Unayo Vouchers.
+</p>
+
+<p class="payment-number">
+Send payment to: <strong>7626 2057</strong>
+</p>
+
+<p>
+A <strong>50% deposit</strong> is required before your project begins.
+The remaining balance is paid upon completion.
+</p>
+
+<p>
+After making payment, please send your proof of payment via WhatsApp to confirm and secure your project slot.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<h3 class="offer-card-title">
+Are You Losing Customers Because They Can’t Find You Online?
+</h3>
+
+<p class="offer-problem">
+Imagine this…
+A customer is searching for a business like yours right now.
+They open Google or Facebook.
+They search.
+They find your competitor.
+They contact them.
+They buy from them.
+
+Not because your competitor is better…
+But because your business was invisible.
+
+This happens every day for many small businesses.
+This package is designed to change that.
+</p>
+
+
+
+
+<div class="offer-section premium-section reveal-premium">
+
+<h4 class="premium-heading">
+Professional Website Development
+</h4>
+
+<p class="premium-subtext">
+A high-quality, conversion-focused website built to establish credibility, increase visibility, and position your business as professional and trustworthy online.
+</p>
+
+<ul class="premium-list">
+<li>Custom 3–5 page professional website</li>
+<li>Fully responsive mobile-friendly design</li>
+<li>Integrated contact form for direct enquiries</li>
+<li>WhatsApp integration for instant communication</li>
+<li>Foundational on-page SEO setup for search visibility</li>
+</ul>
+
+<p class="confidence-line">
+Designed to reflect the true quality of your business and convert visitors into customers.
+</p>
+
+</div>
+
+
+
+<div class="offer-section premium-section reveal-premium">
+
+<h4 class="premium-heading">
+Professional Social Media Setup
+</h4>
+
+<p class="premium-subtext">
+Complete optimization of your social media presence to ensure consistency, clarity, and strong brand positioning across platforms.
+</p>
+
+<ul class="premium-list">
+<li>Full professional page optimization</li>
+<li>Branded profile and visual identity alignment</li>
+<li>Strategic bio writing tailored to your target audience</li>
+<li>Custom-designed cover graphics</li>
+</ul>
+
+<p class="confidence-line">
+Your social platforms will align with your website and present a unified, professional brand.
+</p>
+
+</div>
+
+
+
+<div class="offer-section premium-section reveal-premium">
+
+<h4 class="premium-heading">
+Social Media Growth System (30 Days)
+</h4>
+
+<p class="premium-subtext">
+A structured content approach designed to increase visibility, build audience trust, and drive traffic to your website.
+</p>
+
+<ul class="premium-list">
+<li>Strategic monthly content direction aligned with your goals</li>
+<li>Structured posting schedule for consistency</li>
+<li>Professionally written captions designed for engagement</li>
+<li>Branded content developed to attract ideal customers</li>
+</ul>
+
+<p class="confidence-line">
+Focused on helping your business stay visible and relevant in a competitive digital space.
+</p>
+
+</div>
+
+
+
+<div class="offer-section premium-section reveal-premium">
+
+<h4 class="premium-heading">
+Client Empowerment & Ongoing Support
+</h4>
+
+<p class="premium-subtext">
+Support and guidance to ensure you feel confident managing and understanding your new digital assets.
+</p>
+
+<ul class="premium-list">
+<li>Simple, easy-to-follow website usage guide</li>
+<li>One structured training session</li>
+<li>30 days of post-launch support</li>
+</ul>
+
+<p class="confidence-line">
+You are not left alone after launch. Support is included to ensure smooth implementation.
+</p>
+
+</div>
+
+
+<div class="offer-bonus">
+
+<h4>🎁 Exclusive Bonuses</h4>
+
+<ul>
+<li>FREE Business Growth Consultation (1-hour strategy session)</li>
+<li>Free Logo Refresh or Branding Kit</li>
+<li>7 Ready-to-Use Social Media Templates</li>
+<li>Free 14-Day Social Media Starter Plan</li>
+</ul>
+
+</div>
+
+
+<div class="offer-cta">
+
+<h3>Your Business Deserves to Be Seen</h3>
+
+<p>
+You work hard every day to grow your business.
+You deserve customers to find you easily.
+You deserve a professional online presence that reflects the quality of your work.
+<a href="https://wa.me/26876262057?text=Hello%20Phayo,%20I%20would%20like%20to%20book%20a%20free%20consultation%20for%20the%20From%20Invisible%20to%20Online%20package."
+   class="offer-button"
+   target="_blank"
+   aria-label="Book free consultation on WhatsApp">
+Book Your Free Consultation
+</a>
+<p class="secure-trust">
+Projects are confirmed only after deposit payment.
+</p>
+<p class="offer-note">
+Limited slots only 5 available for this Package.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="pricing" id="pricing">
+
+<div class="section-title">
+<h2>Website Packages Designed to Grow Your Business</h2>
+</div>
+
+<div class="pricing-grid">
+
+<div class="price-card">
+<h3>Professional Presence</h3>
+<h2>E4,800</h2>
+<ul>
+<li>✔ 3–5 Pages</li>
+<li>✔ Clean Design</li>
+<li>✔ WhatsApp Integration</li>
+<li>✔ Basic SEO</li>
+</ul>
+<a href="#contact" class="price-btn">Get Started</a>
+</div>
+
+<div class="price-card popular">
+<span class="badge">Most Popular</span>
+<h3>Growth Website</h3>
+<h2>E7,200</h2>
+<ul>
+<li>✔ Everything in Professional</li>
+<li>✔ Conversion Layout</li>
+<li>✔ Advanced SEO</li>
+<li>✔ Analytics Setup</li>
+</ul>
+<a href="#contact" class="price-btn">Start Growing</a>
+</div>
+
+<div class="price-card">
+<h3>Authority & Scale</h3>
+<h2>E11,500</h2>
+<ul>
+<li>✔ Everything in Growth</li>
+<li>✔ Lead Capture</li>
+<li>✔ Email Integration</li>
+<li>✔ 3 Months Support</li>
+</ul>
+<a href="#contact" class="price-btn">Build Authority</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="process" id="process">
+
+<div class="section-title">
+<h2>How We Work</h2>
+</div>
+
+<div class="process-grid">
+
+<div>
+<h3>1. Consultation</h3>
+<p>Understanding your goals.</p>
+</div>
+
+<div>
+<h3>2. Strategy</h3>
+<p>Plan website structure.</p>
+</div>
+
+<div>
+<h3>3. Development</h3>
+<p>Build fast & SEO ready.</p>
+</div>
+
+<div>
+<h3>4. Launch</h3>
+<p>Your business goes live.</p>
+</div>
+
+</div>
+
+</section>
+<section class="case-study">
+
+<div class="case-container">
+
+<h2 class="case-title">
+Featured Demo Project: Salon Website Experience
+</h2>
+
+<p class="case-intro">
+A professionally designed salon website built to increase bookings, reduce customer confusion, and create a seamless service experience from discovery to appointment.
+</p>
+
+<div class="case-content">
+
+<div class="case-image">
+<img src="salon-demo.jpg" alt="Salon Website Demo Preview">
+</div>
+
+<div class="case-details reveal-premium">
+
+<h3>What This Website Includes</h3>
+
+<ul class="case-list">
+<li>Professional gallery showcasing services and results</li>
+<li>Clear service descriptions with structured pricing</li>
+<li>Easy WhatsApp booking form for instant appointments</li>
+<li>Integrated Google Maps navigation for stress-free directions</li>
+<li>Mobile-optimized layout for customers on the go</li>
+</ul>
+
+<a href="https://phayomeluleki-netizen.github.io/beauty-bliss-salon-website-demo/#about" 
+   target="_blank" 
+   class="case-button">
+View Live Demo
+</a>
+
+</div>
+
+</div>
+
+<div class="case-transformation">
+
+<h3>The Transformation</h3>
+
+<p>
+Before having a structured website, many salons rely only on social media messages which often cause missed enquiries and booking confusion. This demo shows how a properly designed website can streamline bookings, display services clearly, and guide customers directly to the salon using map navigation.
+</p>
+
+<p>
+Instead of answering repetitive questions, the website works as a digital assistant — showcasing services, collecting bookings, and directing clients without friction. This reduces lost customers and increases daily appointment consistency.
+</p>
+
+<p class="case-highlight">
+This is the level of digital structure I bring to every business I work with.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonials" id="testimonials">
+
+<div class="section-title">
+<h2>What Clients Say</h2>
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+<img src="testimonial-whatsapp.jpg">
+<p>"The website looks professional and my customers trust my business more."</p>
+</div>
+
+<div class="testimonial">
+<img src="testimonial-email.jpg">
+<p>"Thank you for improving our campaign website."</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Let's Build Your Website</h2>
+
+<form action="https://formspree.io/f/xwvebgnr" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Tell me about your project" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Phayo Meluleki · Web Design</p>
+
+</footer>
+
+<script>
+
+const toggle=document.querySelector(".menu-toggle");
+const nav=document.querySelector(".nav-links");
+
+toggle.onclick=()=>{nav.classList.toggle("active");};
+
+</script>
+
+<a href="https://wa.me/26876262057" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+  <span class="whatsapp-tooltip">Get Your Business Online</span>
+</a><script>
+
+let currentSlots = 3;
+let display = document.getElementById("slotsNumber");
+
+let counter = 0;
+
+let interval = setInterval(function(){
+  if(counter < currentSlots){
+    counter++;
+    display.textContent = counter;
+  } else {
+    clearInterval(interval);
+  }
+}, 200);
+
+</script><script>
+function premiumReveal() {
+  const elements = document.querySelectorAll('.reveal-premium');
+  const windowHeight = window.innerHeight;
+
+  elements.forEach(el=>{
+    const elementTop = el.getBoundingClientRect().top;
+    if(elementTop < windowHeight - 120){
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', premiumReveal);
+premiumReveal();
+</script><a href="#top" class="back-to-top" id="backToTop">
+  ↑
+</a><script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 400) {
+    backToTop.style.opacity = "1";
+    backToTop.style.visibility = "visible";
+  } else {
+    backToTop.style.opacity = "0";
+    backToTop.style.visibility = "hidden";
+  }
+});
+</script></body>
+</html>
